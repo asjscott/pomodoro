@@ -143,18 +143,18 @@ const Pomodoro = () => {
   return (
     <>
     <div className={`flex flex-col p-4 items-center justify-center h-screen w-full text-slate-50 font-varela ${nextIntervals.current === "pomodoro" ? "bg-red-400" : nextIntervals.current === "short break" ? "bg-teal-500" : "bg-sky-600"}`}>
-        <div className={`flex flex-col items-center justify-center container max-w-lg py-5 rounded-xl ${nextIntervals.current === "pomodoro" ? "bg-red-300" : nextIntervals.current === "short break" ? "bg-teal-400" : "bg-sky-300"}`}>
+        <div className={`flex flex-col items-center justify-center container max-w-sm sm:max-w-lg py-5 rounded-xl ${nextIntervals.current === "pomodoro" ? "bg-red-300" : nextIntervals.current === "short break" ? "bg-teal-400" : "bg-sky-300"}`}>
             <div className='inline-flex justify-center space-x-4'>
-                <span className={`${nextIntervals.current === "pomodoro" ? "bg-red-900 font-bold" : ""} px-3 rounded-md hover:cursor-pointer`} id="pomodoro" onClick={e => handleNames(e)}>Pomodoro</span>
-                <span className={`px-3 rounded-md hover:cursor-pointer ${nextIntervals.current === "short break" ? "bg-teal-600 font-bold" : ""} ` } id="short break" onClick={e => handleNames(e)}>Short Break</span>
-                <span className={`px-3 rounded-md hover:cursor-pointer ${nextIntervals.current === "long break" ? "bg-sky-800 font-bold" : ""} `} id="long break" onClick={e => handleNames(e)}>Long Break</span>
+                <span className={`${nextIntervals.current === "pomodoro" ? "bg-red-900 font-bold" : ""} text-center px-3 rounded-md hover:cursor-pointer`} id="pomodoro" onClick={e => handleNames(e)}>Pomodoro</span>
+                <span className={`text-center px-3 rounded-md hover:cursor-pointer ${nextIntervals.current === "short break" ? "bg-teal-600 font-bold" : ""} ` } id="short break" onClick={e => handleNames(e)}>Short Break</span>
+                <span className={`text-center px-3 rounded-md hover:cursor-pointer ${nextIntervals.current === "long break" ? "bg-sky-800 font-bold" : ""} `} id="long break" onClick={e => handleNames(e)}>Long Break</span>
             </div>
-            <div className='flex justify-center mt-5 text-6xl md:text-9xl text-center font-bold'>{clock}</div>
-            <div className='flex flex-wrap justify-between text-center mt-5 border-box px-5 w-full'>
-                <button className="w-24 text-xl py-3 border rounded-xl hover:bg-slate-400" onClick={handleStart}>Start</button>
-                <button className="w-24 text-xl py-3 border rounded-xl hover:bg-slate-400" onClick={handleStop}>Stop</button>
-                <button className="w-24 text-xl py-3 border rounded-xl hover:bg-slate-400" onClick={handleReset}>Reset</button>
-                <button className="w-24 text-xl py-3 border rounded-xl hover:bg-slate-400" onClick={() => setIsSettings(!isSettings)}>Settings</button>
+            <div className='flex justify-center mt-5 text-6xl sm:text-9xl text-center font-bold'>{clock}</div>
+            <div className='grid grid-cols-2 sm:grid-cols-4 justify-between text-center mt-5 border-box px-5 w-full'>
+                <button className="mx-auto w-24 text-xl mb-5 sm:mb-0 py-3 border rounded-xl hover:bg-slate-400" onClick={handleStart}>Start</button>
+                <button className="mx-auto w-24 text-xl mb-5 sm:mb-0 py-3 border rounded-xl hover:bg-slate-400" onClick={handleStop}>Stop</button>
+                <button className="mx-auto w-24 text-xl py-3 border rounded-xl hover:bg-slate-400" onClick={handleReset}>Reset</button>
+                <button className="mx-auto w-24 text-xl py-3 border rounded-xl hover:bg-slate-400" onClick={() => setIsSettings(!isSettings)}>Settings</button>
             </div>
         </div>
         <div>
