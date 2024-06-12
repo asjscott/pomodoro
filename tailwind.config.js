@@ -1,4 +1,9 @@
 module.exports = {
+  content: [
+    "./public/**/*.{html,js}",
+    "./src/**/*.{html,js}",
+    "./node_modules/tw-elements/js/**/*.js"
+  ],
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: 'class', // enable dark mode
   theme: {
@@ -13,5 +18,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("tw-elements/plugin.cjs")],
 };

@@ -38,7 +38,7 @@ const Pomodoro = () => {
 
     function handleStart() {
         if (intervalId === null) {
-            setIntervalId(setInterval(decrement, 10))
+            setIntervalId(setInterval(decrement, 1000))
         }
     }
     
