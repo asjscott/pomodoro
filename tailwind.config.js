@@ -8,6 +8,9 @@ module.exports = {
   darkMode: 'class', // enable dark mode
   theme: {
     extend: {
+      screens: {
+        'mobile-only': { 'max': '991.98px' },
+        },
       fontFamily: {
         'tilt': ['Tilt Prism', 'sans-serif'],
         'special_elite': ['Special Elite', 'sans-serif'],
