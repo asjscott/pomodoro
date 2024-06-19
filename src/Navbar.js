@@ -30,9 +30,9 @@ const Navbar = () => {
                 fill="currentColor"
                 className="h-7 w-7">
                 <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-                    clip-rule="evenodd" />
+                    clipRule="evenodd" />
                 </svg>
             </span>
             </button>
@@ -44,7 +44,7 @@ const Navbar = () => {
             data-twe-collapse-item>
 
             <a
-                class="mb-4 me-5 ms-2 mt-3 flex items-center text-black/50 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-900 dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:mb-0 lg:mt-1 lg:px-2"
+                className="mb-4 me-5 ms-2 mt-3 flex items-center text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-900 dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:mb-0 lg:mt-1 lg:px-2"
                 href="https://asjscott.github.io/#">
                 Alec Scott  
                 <img
@@ -59,58 +59,57 @@ const Navbar = () => {
                 data-twe-navbar-nav-ref>
                 
                 <li
-                class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
+                className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
                 data-twe-nav-item-ref
                 data-twe-dropdown-ref>
 
                 <a
-                    class="flex items-center text-black/50 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-                    href="#"
+                    className="flex items-center text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                    href="https://asjscott.github.io/#projects"
                     type="button"
                     id="dropdownMenuButton2"
                     data-twe-dropdown-toggle-ref
                     aria-expanded="false">
                     Projects
-                    <span class="ms-1 [&>svg]:w-5">
+                    <span className="ms-1 [&>svg]:w-5">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor">
                         <path
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                        clip-rule="evenodd" />
+                        clipRule="evenodd" />
                     </svg>
                     </span>
                 </a>
                 <ul
-                    class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg data-[twe-dropdown-show]:block dark:bg-surface-dark"
+                    className="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg data-[twe-dropdown-show]:block dark:bg-surface-dark"
                     aria-labelledby="dropdownMenuButton1"
                     data-twe-dropdown-menu-ref>
                     <li>
                     <a
-                        class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                        className="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
                         href="https://asjscott.github.io/#projects"
                         data-twe-dropdown-item-ref
                         >View projects section</a>
                     </li>
                     <li>
-                    <a
-                    class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal pointer-events-none text-black/30 dark:bg-surface-dark dark:text-white/30"
-                    >Football score predictor</a>
+                    <span
+                    className="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal pointer-events-none text-black/30 dark:bg-surface-dark dark:text-white/30"
+                    >Football score predictor</span>
                 </li>
                     <li>
                     <a
-                        class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                        className="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
                         href="https://asjscott.github.io/pomodoro"
                         data-twe-dropdown-item-ref
                         >React projects</a>
                     </li>
                     <li>
-                    <a
-                        class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal pointer-events-none text-black/30 dark:bg-surface-dark dark:text-white/30"
-                        >Trading Bot</a
-                    >
+                    <span
+                        className="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal pointer-events-none text-black/30 dark:bg-surface-dark dark:text-white/30"
+                        >Trading Bot</span>
                     </li>
                 </ul>
                 </li>
@@ -118,7 +117,7 @@ const Navbar = () => {
                 <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0" data-twe-nav-item-ref>
 
                 <a  id="projectslink"
-                    className="flex items-center text-black/50 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                    className="flex items-center text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="https://asjscott.github.io/pomodoro"
                     data-twe-nav-link-ref
                     >Pomodoro Timer</a>
@@ -126,7 +125,7 @@ const Navbar = () => {
 
                 <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0" data-twe-nav-item-ref>
                 <a
-                    className="flex items-center text-black/50 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                    className="flex items-center text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="https://asjscott.github.io/calculator"
                     data-twe-nav-link-ref
                     >Calculator</a >
@@ -134,7 +133,7 @@ const Navbar = () => {
 
                 <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0" data-twe-nav-item-ref>
                 <a
-                    className="flex items-center text-black/50 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                    className="flex items-center text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="https://asjscott.github.io/drum_machine"
                     data-twe-nav-link-ref
                     >Drum Machine</a >
