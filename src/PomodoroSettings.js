@@ -23,22 +23,22 @@ const PomodoroSettings = ({intervals, submit, timings, settings}) => {
                 <div className='grid grid-cols-3 row-span-4 text-sm p-2'>
                     <span>
                         <label>Pomodoro: </label>
-                        <input type="number" name="pomo" className='w-1/2' value={times.pomoTime / 60} onChange={e => setTimes({...times, pomoTime: (e.target.value * 60)})}/>
+                        <input type="number" name="pomo" className='w-1/2' min="0" value={times.pomoTime / 60} onChange={e => setTimes({...times, pomoTime: (e.target.value * 60)})}/>
                     </span>
                     <span>
                         <label>Short Break: </label>
-                        <input type="number" name="shrt" className='w-1/2' value={times.shrtTime / 60} onChange={e => setTimes({...times, shrtTime: (e.target.value * 60)})}/>
+                        <input type="number" name="shrt" className='w-1/2' min="0" value={times.shrtTime / 60} onChange={e => setTimes({...times, shrtTime: (e.target.value * 60)})}/>
                     </span>
                     <span>
                         <label>Long Break: </label>
-                        <input type="number" name="lng" className='w-1/2' value={times.lngTime / 60} onChange={e => setTimes({...times, lngTime: (e.target.value * 60)})}/>
+                        <input type="number" name="lng" className='w-1/2' min="0" value={times.lngTime / 60} onChange={e => setTimes({...times, lngTime: (e.target.value * 60)})}/>
                     </span>
                 </div>
                 <hr></hr>
                 <div className=' row-span-3'>
                     <span className='flex flex-col'>
                         <label>Intervals: </label>
-                        <input type="number" name="intervals" className="text-sm" value={ints} onChange={e => setInts(e.target.value)}/>
+                        <input type="number" name="intervals" className="text-sm" min="0" value={ints} onChange={e => setInts(e.target.value)}/>
                     </span>
                 </div>
                 <div className='flex row-span-2 justify-center'>

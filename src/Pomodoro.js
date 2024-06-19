@@ -39,7 +39,7 @@ const Pomodoro = () => {
 
     function handleStart() {
         if (intervalId === null) {
-            setIntervalId(setInterval(decrement, 1000))
+            setIntervalId(setInterval(decrement, 10))
         }
     }
     
@@ -65,7 +65,7 @@ const Pomodoro = () => {
     }
 
     function handleNames(e) {
-        handleReset()
+        
         if (e.target.id === "short break") {
             setNextIntervals({
                 ...nextIntervals,
@@ -80,6 +80,13 @@ const Pomodoro = () => {
                 next: "pomodoro"
             })
             setTimer(timings.lngTime)
+        } else {
+            setNextIntervals({
+                ...nextIntervals,
+                current: "pomodoro",
+                next: "short break"
+            })
+            setTimer(timings.pomoTime)
         }
     }
 
